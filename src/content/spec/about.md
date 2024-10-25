@@ -1,9 +1,14 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# About Me
 
-::github{repo="saicaca/fuwari"}
+👋 Hey there! I’m a cybersecurity enthusiast and researcher, a 17yo from Serbia.
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+## 🛡️ My Focus Areas:
+- **Web Application Security**: Digging into code to identify vulnerabilities and strengthen applications is my passion.
+- **Active Directory Security**: I work on ensuring that access controls are tight and only the right people have access.
+- **Digital Forensics**: I enjoy piecing together clues from digital evidence, much like solving a mystery!
+
+## 🎮 CTF Lover:
+In my free time, I love tackling Capture The Flag (CTF) challenges. It’s a great way to sharpen my skills and have some fun!
+
+## 📚 Currently Learning:
+At the moment, I’m working towards my **CPTS certification**.
