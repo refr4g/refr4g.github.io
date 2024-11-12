@@ -83,7 +83,7 @@ This api endpoint is used in main web page to pull all notes from db and display
 }
 ```
 
-Here we go, finally something interesting. This api endpoint is used when you access into specific note, and it pulls all info from db (which is H2 if we look into `application.properties`) based on the provided `name` parameter, filtering notes by this name. It validates input in order to prevent SQL Injection by checking for `$` and `concat`, and then returns note details. Since we can control `name` parameter it seems that we can get SQLi really easy and bypass this checks.
+Here we go, finally something interesting. This api endpoint is used when you access into specific note, and it pulls all info from db (which is H2 if we look into `application.properties`) based on the provided `name` parameter, filtering notes by this name. It validates input in order to prevent SQL Injection by checking for `$` and `concat`, and then returns note details. Since we can control `name` parameter it seems that we can get SQLi really easy and bypass these checks.
 
 **Reference:** [H2 SQL Database Website](https://www.h2database.com/html/main.html)
 
