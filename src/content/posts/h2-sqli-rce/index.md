@@ -214,11 +214,11 @@ something' OR 1=1; DROP ALIAS IF EXISTS exec_cmd; CREATE ALIAS exec_cmd AS 'Stri
 }'; UPDATE notes SET note = exec_cmd() WHERE id = 1; --
 ```
 
-At the beggining of the SQL query, we check if alias exists, and if it does we delete it. This approach allows us to reuse the alias name in our payload without needing to change it each time. Since we don't use `concat` or `$` in  sql query/payload, this means that bypassing checks i prevously mentioned in source code analysis is successfull!
+At the beggining of the SQL query, we check if alias exists, and if it does we delete it. This approach allows us to reuse the alias name in our payload without needing to change it each time. Since we don't use `concat` or `$` in  sql query/payload, this means that bypassing checks i prevously mentioned in source code analysis is successful!
 
 ![alt text](image-8.png)
 
-Sending payload was sucessfull, now we have to check if the note is updated on the web app.
+Sending payload was successful, now we have to check if the note is updated on the web app.
 
 ![alt text](image-9.png)
 
