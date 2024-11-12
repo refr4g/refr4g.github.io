@@ -2,7 +2,7 @@
 title: "Escalating H2 SQL Injection to RCE"
 published: 2024-11-12
 description: "Writeup on one Java Web Challenge that uses H2 db."
-tags: [Source Code Analysis, SQL Injection, RCE]
+tags: [CTF, Source Code Analysis, SQL Injection, RCE]
 category: Web Security
 image: ./cover.jpeg
 draft: false
@@ -84,6 +84,8 @@ This api endpoint is used in main web page to pull all notes from db and display
 ```
 
 Here we go, finally something interesting. This api endpoint is used when you access into specific note, and it pulls all info from db (which is H2 if we look into `application.properties`) based on the provided `name` parameter, filtering notes by this name. It validates input in order to prevent SQL Injection by checking for `$` and `concat`, and then returns note details. Since we can control `name` parameter it seems that we can get SQLi really easy and bypass this checks.
+
+**Reference:** [H2 SQL Database Website](https://www.h2database.com/html/main.html)
 
 ```html
 <script>
@@ -221,3 +223,7 @@ Sending payload was sucessfull, now we have to check if the note is updated on t
 ![alt text](image-9.png)
 
 Hell yeahh, we have RCE!
+
+## Final Toughts
+
+It is easy challenge, but i found it interesting to make a writeup on since not many people around me know about H2 db, and it was interesting to write some custom code in order to get RCE. I know that the writeup is lenghty xD, but i just wanted to cover all steps clearly.
