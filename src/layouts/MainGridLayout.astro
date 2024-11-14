@@ -31,9 +31,8 @@ const hasBannerLink = !!siteConfig.banner.credit.url
 
 <div class="absolute w-full" class:list={[{"top-[30vh]": siteConfig.banner.enable, "top-[5.5rem]": !siteConfig.banner.enable}]}>
     <div class="relative max-w-[var(--page-width)] mx-auto">
-        <div id="main-grid" class="transition duration-700 w-full left-0 right-0 grid grid-cols-[15rem_auto] grid-rows-[auto_1fr_auto] lg:grid-rows-[auto]
-    mx-auto gap-4 px-0 md:px-4"
-    >
+        <div id="main-grid" class="grid grid-cols-1 lg:grid-cols-[17.5rem_1fr] gap-4 px-0 md:px-4">
+
 
             <!-- Banner image credit -->
             {hasBannerCredit && <a href={siteConfig.banner.credit.url} id="banner-credit" target="_blank" rel="noopener" aria-label="Visit image source"
