@@ -165,7 +165,7 @@ Let's make some basic testing! We will send `something; OR 1=1` to see what will
 ![](image-6.png)
 Yay! We confirmed SQLi vulnerability.
 
-But wait... I think we can esacalate this to RCE. Now how can we execute shell commands inside `H2` database.
+But wait... I think we can esacalate this to RCE. Now how can we execute shell commands inside `H2` database?
 
 ### Escalating to RCE
 
@@ -226,4 +226,4 @@ Hell yeahh, we have RCE!
 
 ## Final Toughts
 
-It is easy challenge, but i found it interesting to make a writeup on since not many people around me know about H2 db, and it was interesting to write some custom code in order to get RCE. I know that the writeup is lenghty xD, but i just wanted to cover all steps clearly.
+It is easy challenge, but i found it interesting to make a writeup on since not many people around me know about H2 db, and it was interesting to write some custom code in order to get RCE. I know that the writeup is lengthy xD, but i just wanted to cover all steps clearly.
