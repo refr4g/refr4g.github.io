@@ -44,11 +44,11 @@ export const profileConfig: ProfileConfig = {
   name: 'refr4g',
   bio: '17yo cyber security enthusiast',
   links: [
-    {
-      name: 'Linkedin',
-      icon: 'fa6-brands:linkedin',
-      url: 'https://www.linkedin.com/in/ppetrovicluka/',
-    },
+    // {
+    //   name: 'Linkedin',
+    //   icon: 'fa6-brands:linkedin',
+    //   url: 'https://www.linkedin.com/in/ppetrovicluka/',
+    // },
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
