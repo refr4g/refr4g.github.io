@@ -3,8 +3,9 @@ title: MDI in the Wild – Identity Attacks & Detection with Microsoft Defender 
 published: 2025-03-27
 description: Explore how Microsoft Defender for Identity (MDI) detects real-world identity-based attacks across Active Directory environments. This hands-on post walks through red team techniques like Kerberoasting and DCSync, shows how MDI catches them in action, and highlights powerful defender strategies like honeytokens and detection tuning. Perfect for red and blue teams alike.
 tags:
-  - Purple
-  - Team
+  - Purple Team
+  - Active Directory
+  - Microsoft Defender
 category: Active Directory Security
 image: ./cover.png
 draft: false
@@ -27,7 +28,7 @@ For Blue Teamers: MDI is your X-ray vision into identity-related threats. It pro
 
 With tight MITRE ATT&CK mapping and real-time alerts, MDI shines when identity becomes the attack vector.
 
-![[Pasted image 20250326133830.png]]
+![alt text](Pasted image 20250326133830.png)
 
 ## The Attackers Journey (Red Team POV)
 
@@ -37,15 +38,15 @@ Let’s walk through a realistic kill chain:
 
 Imagine scenario where, we as attackers, got initial access which is standard domain user account. Next thing which will any attacker do is enumeration of users, groups and etc. Let's say James' account is compromised, now attacker will enumerate all SPN accounts.
 
-![[Pasted image 20250326142935.png]]
+![alt text](Pasted image 20250326142935.png)
 
 Two SPN accounts are presented in the domain. Next, attacker will obtain TGS tickets for all of these accounts and attempts to crack them offline.
 
-![[Pasted image 20250326145455.png]]
+![alt text](Pasted image 20250326145455.png)
 
 These TGS attacker can try to crack using hashcat and rockyou.txt wordlist.
 
-![[Pasted image 20250327115333.png]]
+![alt text](Pasted image 20250327115333.png)
 
 `svc_cifs` is found to be using a weak password.
 
