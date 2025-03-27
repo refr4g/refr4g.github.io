@@ -6,7 +6,7 @@ tags:
   - Purple
   - Team
 category: Active Directory Security
-image: ./cover.jpeg
+image: ./cover.png
 draft: false
 ---
 ## Hook
