@@ -8,7 +8,7 @@ tags:
   - Microsoft Defender
 category: Active Directory Security
 image: ./cover.png
-draft: false
+draft: true
 ---
 ## Hook
 
