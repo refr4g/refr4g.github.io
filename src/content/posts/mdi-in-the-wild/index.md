@@ -7,7 +7,7 @@ tags:
   - Team
 category: Active Directory Security
 image: ./cover.jpeg
-draft: true
+draft: false
 ---
 ## Hook
 
